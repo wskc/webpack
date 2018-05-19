@@ -4,18 +4,18 @@
 {{/if_eq}}
 import Vue from 'vue'
 import App from './App'
-{{#router}}
 import router from './router'
-{{/router}}
+import store from './store/index'
+
+import './scss/app.scss';
 
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  {{#router}}
   router,
-  {{/router}}
+  store,
   {{#if_eq build "runtime"}}
   render: h => h(App)
   {{/if_eq}}
