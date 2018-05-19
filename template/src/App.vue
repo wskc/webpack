@@ -12,7 +12,7 @@ export default {
 }
 </script>
 
-<style>
+<style src="./scss/app.scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
